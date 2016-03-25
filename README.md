@@ -1,5 +1,5 @@
 # Fire Emblem Syntax
-This is the syntax definition for Fire Emblem dialogue code.
+This is the syntax definition for Fire Emblem dialogue code. The color theme in the demo image is Monokai.
 
 ## Usage
 1. Open Sublime Text
