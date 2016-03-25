@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>fes</string>
+	</array>
+	<key>indent_subsequent_lines</key>
+	<true/>
+	<key>name</key>
+	<string>Fire Emblem Syntax</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Character 1's name</string>
+			<key>match</key>
+			<string>\$Wm</string>
+			<key>name</key>
+			<string>storage.type.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Character 2's name</string>
+			<key>match</key>
+			<string>\$Ws</string>
+			<key>name</key>
+			<string>storage.type.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Left or right position</string>
+			<key>match</key>
+			<string>3\$w0|7\$w0</string>
+			<key>name</key>
+			<string>storage.type.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Emotion</string>
+			<key>match</key>
+			<string>\$E</string>
+			<key>name</key>
+			<string>storage.type.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Voice clip</string>
+			<key>match</key>
+			<string>\$Svp</string>
+			<key>name</key>
+			<string>storage.type.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Load in avatar's name</string>
+			<key>match</key>
+			<string>\$a</string>
+			<key>name</key>
+			<string>storage.type.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Avatar's name</string>
+			<key>match</key>
+			<string>\$Nu</string>
+			<key>name</key>
+			<string>entity.name.class.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>New line</string>
+			<key>match</key>
+			<string>\\n</string>
+			<key>name</key>
+			<string>entity.name.class.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Scrolls a line</string>
+			<key>match</key>
+			<string>\$k\$p</string>
+			<key>name</key>
+			<string>entity.name.class.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Break</string>
+			<key>match</key>
+			<string>\|</string>
+			<key>name</key>
+			<string>constant.numeric.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Dialog intro</string>
+			<key>match</key>
+			<string>^[A-Z0-9_]*[:]</string>
+			<key>name</key>
+			<string>keyword.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Any Japanese characters</string>
+			<key>match</key>
+			<string>\p{Hiragana}|\p{Katakana}|\p{Han}</string>
+			<key>name</key>
+			<string>string.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Random $** we don't care about</string>
+			<key>match</key>
+			<string>\$[\w]{1,2}</string>
+			<key>name</key>
+			<string>comment.line.fes</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comments</string>
+			<key>match</key>
+			<string>[/]+.*</string>
+			<key>name</key>
+			<string>comment.line.fes</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.fire_emblem_syntax</string>
+	<key>uuid</key>
+	<string>0fd5a259-fd10-419f-9c73-2be94febe0df</string>
+</dict>
+</plist>

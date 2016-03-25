@@ -1,0 +1,78 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+#
+# REFERENCES
+# http://pastebin.com/0g7jf3i3
+# https://manual.macromates.com/en/language_grammars#naming_conventions
+# http://docs.sublimetext.info/en/latest/extensibility/syntaxdefs.html
+#
+# USAGE
+# Open Sublime Text
+# Preferences > Browse Packages...
+# This opens up your file manager
+# Navigate to the "User" folder
+# Paste this file in and you're done.
+# View > Syntax > Fire Emblem Syntax
+---
+name: Fire Emblem Syntax
+scopeName: source.fire_emblem_syntax
+fileTypes: [fes]
+uuid: 0fd5a259-fd10-419f-9c73-2be94febe0df
+indent_subsequent_lines: true
+
+patterns:
+- name: storage.type.fes
+  match: \$Wm
+  comment: Character 1's name
+
+- name: storage.type.fes
+  match: \$Ws
+  comment: Character 2's name
+
+- name: storage.type.fes
+  match: 3\$w0|7\$w0
+  comment: Left or right position
+
+- name: storage.type.fes
+  match: \$E
+  comment: Emotion
+
+- name: storage.type.fes
+  match: \$Svp
+  comment: Voice clip
+
+- name: storage.type.fes
+  match: \$a
+  comment: Load in avatar's name
+
+- name: entity.name.class.fes
+  match: \$Nu
+  comment: Avatar's name
+
+- name: entity.name.class.fes
+  match: \\n
+  comment: New line
+
+- name: entity.name.class.fes
+  match: \$k\$p
+  comment: Scrolls a line
+
+- name: constant.numeric.fes
+  match: \|
+  comment: Break
+
+- name: keyword.fes
+  match: ^[A-Z0-9_]*[:]
+  comment: Dialog intro
+
+- name: string.fes
+  match: \p{Hiragana}|\p{Katakana}|\p{Han}
+  comment: Any Japanese characters
+
+- name: comment.line.fes
+  match: \$[\w]{1,2}
+  comment: Random $** we don't care about
+
+- name: comment.line.fes
+  match: '[/]+.*'
+  comment: Comments
+...
